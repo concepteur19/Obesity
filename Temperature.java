@@ -1,37 +1,26 @@
 public class Temperature  
 {
-    import java.util.*;
     public static void main(String[] args) 
     {
-        class Scanner
+        Int t;
+        t=0;
+        System.out.printline("entrez la température de l'eau");
+        t= Clavier.lireInt();
+        
+        if (t<=0)
         {
-            public Scanner()
-            public static void main(String[] args)
-            {
-                Scanner sc= new Scanner(system.in)
-            }
+            System.out.println("votre eau est à l'état de glace");
         }
-       Int t;
-       t=0;
-
-       System.out.printline("entrez la température de l'eau");
-       Int t= sc.nextLine();
-
-       if (t<=0)
-       {
-           System.out.println("votre eau est à l'état de glace");
-        }
-        else 
+        else
         {
             if (t>100)
             {
                 System.out.println("votre eau est à l'état gazeux");
             }
-            else 
+            else
             {
                 System.out.println("votre eau est à l'état liquide");
             }
         }
-
     }
 }
